@@ -1,0 +1,33 @@
+plugins {
+    alias(libs.plugins.android.library)
+    alias(libs.plugins.legacy.kapt)
+}
+
+android {
+    namespace 'ren.icraft.library'
+    compileSdk {
+        version = release(37)
+    }
+
+    defaultConfig {
+        minSdk 21
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_21
+        targetCompatibility JavaVersion.VERSION_21
+    }
+
+    buildFeatures {
+        viewBinding true
+        dataBinding true
+    }
+}
+
+dependencies {
+    implementation libs.androidx.activity.ktx
+    implementation libs.androidx.appcompat
+    implementation libs.androidx.core.ktx
+    implementation libs.material
+}

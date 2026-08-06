@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TvReflectionCardView">
+        <!-- 倒影高度占总高度比例，建议0.15 ~ 0.25 -->
+        <attr name="reflectionRatio" format="float" />
+        <!-- 倒影顶部透明度 0~255 -->
+        <attr name="reflectionStartAlpha" format="integer" />
+        <!-- 倒影距离顶部的距离百分比 0 ~ 0.1 -->
+        <attr name="reflectionGapRatio" format="float" />
+        <!-- 倒影是否显示选中框 -->
+        <attr name="reflectionShowFocus" format="boolean" />
+    </declare-styleable>
+</resources>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="TV.Main.Card" parent="CardView">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="cardBackgroundColor">@color/bg_black</item>
+        <item name="cardCornerRadius">11dp</item>
+        <item name="android:layout_marginEnd">8dp</item>
+        <item name="reflectionRatio">0.133</item>
+        <item name="reflectionStartAlpha">155</item>
+        <item name="cardElevation">0dp</item>
+        <item name="layout_constraintWidth_percent">0.2</item>
+        <item name="layout_constraintHeight_percent">0.555</item>
+        <item name="android:foreground">@drawable/tv_card_default_focus</item>
+        <item name="layout_constraintVertical_bias">0.35</item>
+        <item name="android:scaleType">fitXY</item>
+    </style>
+
+    <style name="TV.Main.Card.Bottom" parent="CardView">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="layout_constraintWidth_percent">0.14</item>
+        <item name="layout_constraintHeight_percent">0.18</item>
+        <item name="cardCornerRadius">11dp</item>
+        <item name="cardBackgroundColor">@color/bg_blue</item>
+        <item name="android:layout_marginEnd">15dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:stateListAnimator">@animator/default_scale</item>
+        <item name="android:foreground">@drawable/tv_card_default_focus</item>
+        <item name="layout_constraintVertical_bias">0.35</item>
+    </style>
+
+    <style name="TV.Main.Text" parent="TextAppearance.AppCompat">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:drawablePadding">44dp</item>
+        <item name="android:layout_marginTop">11dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/white_text</item>
+        <item name="android:gravity">bottom|center</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="TV.Main.Text.Bottom" parent="TextAppearance.AppCompat">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/white_text</item>
+        <item name="android:background">@color/bg_blue_text</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">3dp</item>
+        <item name="android:paddingBottom">3dp</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="TV.Main.Image" parent="">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:scaleX">0.93</item>
+        <item name="android:scaleY">0.93</item>
+        <item name="android:scaleType">centerInside</item>
+    </style>
+</resources>

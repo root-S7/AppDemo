@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:background="@color/bg_deep_blue"
+    tools:layout_height="match_parent"
+    tools:layout_width="match_parent"
+    tools:parentTag="androidx.constraintlayout.widget.ConstraintLayout">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:id="@+id/guideline_start"
+        tools:ignore="DuplicateIds"
+        tools:layout_constraintGuide_percent="0.1"
+        tools:orientation="vertical" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:id="@+id/guideline_end"
+        tools:ignore="DuplicateIds"
+        tools:layout_constraintGuide_percent="0.9"
+        tools:orientation="vertical" />
+
+    <ren.icraft.library.ui.component.TvReflectionCardView
+        android:id="@+id/netflix"
+        style="@style/TV.Main.Card"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/youtube"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="@id/guideline_start"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/TV.Main.Text"
+            android:drawableTop="@drawable/logo_netflix"
+            android:text="NETFLIX" />
+
+    </ren.icraft.library.ui.component.TvReflectionCardView>
+
+    <ren.icraft.library.ui.component.TvReflectionCardView
+        android:id="@+id/youtube"
+        style="@style/TV.Main.Card"
+        app:cardBackgroundColor="@color/bg_purple"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/google_play"
+        app:layout_constraintStart_toEndOf="@id/netflix"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/TV.Main.Text"
+            android:drawableTop="@drawable/logo_youtube"
+            android:text="YouTube" />
+
+    </ren.icraft.library.ui.component.TvReflectionCardView>
+
+    <ren.icraft.library.ui.component.TvReflectionCardView
+        android:id="@+id/google_play"
+        style="@style/TV.Main.Card"
+        app:cardBackgroundColor="@color/bg_green"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/chrome"
+        app:layout_constraintStart_toEndOf="@id/youtube"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/TV.Main.Text"
+            android:drawableTop="@drawable/logo_google_play"
+            android:text="Google Play" />
+
+    </ren.icraft.library.ui.component.TvReflectionCardView>
+
+    <ren.icraft.library.ui.component.TvReflectionCardView
+        android:id="@+id/chrome"
+        style="@style/TV.Main.Card"
+        android:layout_marginEnd="0dp"
+        app:cardBackgroundColor="@color/bg_light_purple"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/guideline_end"
+        app:layout_constraintStart_toEndOf="@id/google_play"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/TV.Main.Text"
+            android:drawableTop="@drawable/logo_chrome"
+            android:text="Chrome" />
+
+    </ren.icraft.library.ui.component.TvReflectionCardView>
+
+</merge>

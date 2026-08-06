@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:background="@color/bg_deep_blue"
+    tools:layout_height="match_parent"
+    tools:layout_width="match_parent"
+    tools:parentTag="androidx.constraintlayout.widget.ConstraintLayout">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:id="@+id/guideline_start"
+        tools:ignore="DuplicateIds"
+        tools:layout_constraintGuide_percent="0.1"
+        tools:orientation="vertical" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:id="@+id/guideline_end"
+        tools:ignore="DuplicateIds"
+        tools:layout_constraintGuide_percent="0.9"
+        tools:orientation="vertical" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/keystone"
+        style="@style/TV.Main.Card.Bottom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/miracast"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="@id/guideline_start"
+        app:layout_constraintTop_toBottomOf="@id/netflix"
+        app:layout_constraintVertical_bias="0.5">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                style="@style/TV.Main.Image"
+                android:src="@drawable/ic_keystone" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/TV.Main.Text.Bottom"
+                android:text="Keystone" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/miracast"
+        style="@style/TV.Main.Card.Bottom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/signal_source"
+        app:layout_constraintStart_toEndOf="@id/keystone"
+        app:layout_constraintTop_toBottomOf="@id/netflix"
+        app:layout_constraintVertical_bias="0.5">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                style="@style/TV.Main.Image"
+                android:src="@drawable/ic_miracast" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/TV.Main.Text.Bottom"
+                android:text="Miracast" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/signal_source"
+        style="@style/TV.Main.Card.Bottom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/my_apps"
+        app:layout_constraintStart_toEndOf="@id/miracast"
+        app:layout_constraintTop_toBottomOf="@id/netflix"
+        app:layout_constraintVertical_bias="0.5">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                style="@style/TV.Main.Image"
+                android:src="@drawable/ic_signal_source" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/TV.Main.Text.Bottom"
+                android:text="Signal Source" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/my_apps"
+        style="@style/TV.Main.Card.Bottom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/settings"
+        app:layout_constraintStart_toEndOf="@id/signal_source"
+        app:layout_constraintTop_toBottomOf="@id/netflix"
+        app:layout_constraintVertical_bias="0.5">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                style="@style/TV.Main.Image"
+                android:src="@drawable/ic_my_apps" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/TV.Main.Text.Bottom"
+                android:text="My Apps" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/settings"
+        style="@style/TV.Main.Card.Bottom"
+        android:layout_marginEnd="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/guideline_end"
+        app:layout_constraintStart_toEndOf="@id/my_apps"
+        app:layout_constraintTop_toBottomOf="@id/netflix"
+        app:layout_constraintVertical_bias="0.5">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                style="@style/TV.Main.Image"
+                android:src="@drawable/ic_settings" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/TV.Main.Text.Bottom"
+                android:text="Settings" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.cardview.widget.CardView>
+
+</merge>

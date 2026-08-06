@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg_black">#010004</color>
+    <color name="bg_purple">#47426a</color>
+    <color name="bg_blue">#1280e9</color>
+    <color name="bg_blue_text">#3298e7</color>
+    <color name="bg_deep_blue">#0100fa</color>
+    <color name="bg_light_purple">#8b47d0</color>
+    <color name="bg_green">#82dc80</color>
+    <color name="black_text">#181717</color>
+    <color name="white_text">#DEE0E4</color>
+</resources>
