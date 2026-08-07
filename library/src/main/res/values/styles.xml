@@ -10,7 +10,7 @@
         <item name="reflectionRatio">0.133</item>
         <item name="reflectionStartAlpha">155</item>
         <item name="cardElevation">0dp</item>
-        <item name="layout_constraintWidth_percent">0.2</item>
+        <item name="layout_constraintWidth_percent">0.185</item>
         <item name="layout_constraintHeight_percent">0.555</item>
         <item name="android:foreground">@drawable/tv_card_default_focus</item>
         <item name="layout_constraintVertical_bias">0.35</item>
