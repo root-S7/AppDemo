@@ -36,6 +36,7 @@
         app:layout_constraintBottom_toBottomOf="@+id/wifi"
         app:layout_constraintEnd_toStartOf="@id/wifi"
         app:layout_constraintHorizontal_bias="1"
+        android:padding="4dp"
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="@id/guideline_start"
         app:layout_constraintTop_toTopOf="@+id/wifi" />
@@ -50,6 +51,7 @@
         android:focusableInTouchMode="true"
         android:foreground="@drawable/tv_card_default_focus"
         android:src="@drawable/ic_wifi"
+        android:padding="4dp"
         app:layout_constraintBottom_toBottomOf="@+id/time"
         app:layout_constraintEnd_toStartOf="@id/time"
         app:layout_constraintStart_toEndOf="@id/usb"
@@ -64,6 +66,7 @@
         android:focusableInTouchMode="true"
         android:foreground="@drawable/tv_card_default_focus"
         android:format12Hour="h:mm a  EEEE, MMMM d"
+        android:padding="4dp"
         android:textColor="@color/white_text"
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@id/netflix"
